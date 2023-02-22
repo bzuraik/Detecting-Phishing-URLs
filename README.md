@@ -4,7 +4,7 @@ As part of a project, I was tasked with enabling ads on Book-My-Show website whi
 
 ## Dataset Details:
 
-The dataset included 11,000 samples, each corresponding to a different URL. Each sample had 32 features that described the URL with values of -1, 0, and 1. These features were used to classify each URL as phishing (1), suspicious (0), or legitimate (1).
+The dataset comprised 11,000 unique samples that were associated with different URLs. The 32 features in each sample represented the URLs and were assigned values of -1, 0, or 1. Based on these features, the URLs were classified as legitimate (1), suspicious (0), or prone to phishing (1).
 
 ## Exploratory Data Analysis:
 
