@@ -1,4 +1,4 @@
-# Cyber-Security
+# Detecting-Phishing-URLs
 
 As part of a project, I was tasked with enabling ads on Book-My-Show website while ensuring user privacy and safety. To accomplish this, I needed to analyze whether specific URLs contained phishing attacks that could harm visitors to the site.
 
@@ -191,12 +191,12 @@ df_data.head()
   </tbody>
 </table>
 
-#Exploratory Data Analysis
-## Each sample has 32 features ranging from -1,0,1. Explore the data using histogram, heatmaps.
+# Exploratory Data Analysis
+- Each sample has 32 features ranging from -1,0,1. I Explored the data using histogram, heatmaps.
 
-## Determine the number of samples present in the data, unique elements in all the features.
+- Determined the number of samples present in the data, unique elements in all the features.
 
-## Check if there is any null value in any features.
+- Checked if there is any null value in any features.
 
 ----------------------------------------------------------------------------------------
 
@@ -789,7 +789,7 @@ Y.head()
 
 ## Building a Classification Model:
 
-### In the second week, I built a robust classification system to identify phishing URLs. We used a binary classifier to detect malicious or phishing URLs and plotted the ROC curve to illustrate the diagnostic ability of this binary classifier. We validated the accuracy of the data using the K-Fold cross-validation technique. The final output was a model that gave maximum accuracy on the validation dataset with selected attributes.
+### Next, I built a robust classification system to identify phishing URLs. I used a binary classifier to detect malicious or phishing URLs and plotted the ROC curve to illustrate the diagnostic ability of this binary classifier. I validated the accuracy of the data using the K-Fold cross-validation technique. The final output was a model that gave maximum accuracy on the validation dataset with selected attributes.
 
 ```python
 #model build for different binary classification and show confusion matrix
@@ -912,10 +912,10 @@ plt.show()
 ![__results___35_0](https://user-images.githubusercontent.com/95400232/220488894-c0c5c5f5-e08a-4c35-a795-464f6309c059.png)
 #### ROC plot shows XGBClassifier True Positive rate is higher than the other models.
 
-##Data Acuracy Validation
+## Data Acuracy Validation
 Using GridSearchCV with StratifiedKFold cross-validation technique to validate the accuracy of data and find best parameter of different binary classifier models.
 
-###LogisticRegression Model
+### LogisticRegression Model
 ```python
 import warnings
 warnings.filterwarnings("ignore")
@@ -942,11 +942,13 @@ print('Best Hyperparameters:', grid_search.best_params_)
 print('Model object with best parameters:')
 print(grid_search.best_estimator_)
 ```
+```python
 Best Parameter:
 F1 Score: 0.9119919888624345
 Best Hyperparameters: {'C': 10, 'penalty': 'l1', 'solver': 'liblinear'}
 Model object with best parameters:
 LogisticRegression(C=10, penalty='l1', solver='liblinear')
+```
 
 ### KNeighborsClassifier Model evaluation using GridSearchCV
 ```python
@@ -973,11 +975,13 @@ print('Best Hyperparameters:', gs_results.best_params_)
 print('Model object with best parameters:')
 print(gs_results.best_estimator_)
 ```
+```python
 Best Parameter:
 F1 Score: 0.9568364237886406
 Best Hyperparameters: {'metric': 'manhattan', 'n_neighbors': 11, 'weights': 'distance'}
 Model object with best parameters:
 KNeighborsClassifier(metric='manhattan', n_neighbors=11, weights='distance')
+```
 
 ### XGBClassifier with kfold cross validation
 
