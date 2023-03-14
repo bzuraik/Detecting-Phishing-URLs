@@ -8,7 +8,7 @@ The dataset comprised 11,000 unique samples that were associated with different 
 
 ## Exploratory Data Analysis:
 
-To begin, we performed exploratory data analysis on the dataset. We used histograms and heatmaps to visualize the data and determined the number of samples in the dataset as well as the unique elements in each feature. We also checked if there were any null values in the features.
+To begin, I performed exploratory data analysis on the dataset. I used histograms and heatmaps to visualize the data and determined the number of samples in the dataset as well as the unique elements in each feature. We also checked if there were any null values in the features.
 
 ```python
 import warnings
