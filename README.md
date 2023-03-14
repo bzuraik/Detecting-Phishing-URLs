@@ -8,7 +8,7 @@ The dataset comprised 11,000 unique samples that were associated with different 
 
 ## Exploratory Data Analysis:
 
-To begin, I performed exploratory data analysis on the dataset. I used histograms and heatmaps to visualize the data and determined the number of samples in the dataset as well as the unique elements in each feature. We also checked if there were any null values in the features.
+To begin, I performed exploratory data analysis on the dataset. I used histograms and heatmaps to visualize the data and determined the number of samples in the dataset as well as the unique elements in each feature. I also checked if there were any null values in the features.
 
 ```python
 import warnings
@@ -435,7 +435,7 @@ sns.heatmap(df_data.corr(),annot=True, linewidths=.5, fmt='.1f',ax=ax)
 
 ## Correlation of Features and Feature Selection:
 
-### Next, we looked for any correlated features in the data and removed any features that were highly correlated.
+### Next, I looked for any correlated features in the data and removed any features that were highly correlated.
 
 ```python
 # threshold greater than 0.75
