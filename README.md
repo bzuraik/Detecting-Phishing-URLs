@@ -12,8 +12,8 @@ To begin, I performed exploratory data analysis on the dataset. I used histogram
 
 ```python
 import warnings
-import numpy as np  # linear algebra
-import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
 import matplotlib.pyplot as plt
 # %matplotlib inline
@@ -99,9 +99,9 @@ df_data.head()
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>-1</td>
+<td>1</td>
+<td>0</td>
+<td>-1</td>
       <td>1</td>
       <td>0</td>
       <td>...</td>
@@ -204,93 +204,6 @@ df_data.head()
 
 
 
-<div>
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>longitude</th>
-      <th>latitude</th>
-      <th>housing_median_age</th>
-      <th>total_rooms</th>
-      <th>total_bedrooms</th>
-      <th>population</th>
-      <th>households</th>
-      <th>median_income</th>
-      <th>ocean_proximity</th>
-      <th>median_house_value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>-122.23</td>
-      <td>37.88</td>
-      <td>41</td>
-      <td>880</td>
-      <td>129.0</td>
-      <td>322</td>
-      <td>126</td>
-      <td>8.3252</td>
-      <td>NEAR BAY</td>
-      <td>452600</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>-122.22</td>
-      <td>37.86</td>
-      <td>21</td>
-      <td>7099</td>
-      <td>1106.0</td>
-      <td>2401</td>
-      <td>1138</td>
-      <td>8.3014</td>
-      <td>NEAR BAY</td>
-      <td>358500</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>-122.24</td>
-      <td>37.85</td>
-      <td>52</td>
-      <td>1467</td>
-      <td>190.0</td>
-      <td>496</td>
-      <td>177</td>
-      <td>7.2574</td>
-      <td>NEAR BAY</td>
-      <td>352100</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>-122.25</td>
-      <td>37.85</td>
-      <td>52</td>
-      <td>1274</td>
-      <td>235.0</td>
-      <td>558</td>
-      <td>219</td>
-      <td>5.6431</td>
-      <td>NEAR BAY</td>
-      <td>341300</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>-122.25</td>
-      <td>37.85</td>
-      <td>52</td>
-      <td>1627</td>
-      <td>280.0</td>
-      <td>565</td>
-      <td>259</td>
-      <td>3.8462</td>
-      <td>NEAR BAY</td>
-      <td>342200</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 ```python
 #identify the type of data in each column
@@ -310,40 +223,40 @@ df_data.info()
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 11055 entries, 0 to 11054
 Data columns (total 32 columns):
- #   Column                       Non-Null Count  Dtype 
----  ------                       --------------  ----- 
- 0   index                        11055 non-null  object
- 1   having_IPhaving_IP_Address   11055 non-null  int64 
- 2   URLURL_Length                11055 non-null  int64 
- 3   Shortining_Service           11055 non-null  int64 
- 4   having_At_Symbol             11055 non-null  int64 
- 5   double_slash_redirecting     11055 non-null  int64 
- 6   Prefix_Suffix                11055 non-null  int64 
- 7   having_Sub_Domain            11055 non-null  int64 
- 8   SSLfinal_State               11055 non-null  int64 
- 9   Domain_registeration_length  11055 non-null  int64 
- 10  Favicon                      11055 non-null  int64 
- 11  port                         11055 non-null  int64 
- 12  HTTPS_token                  11055 non-null  int64 
- 13  Request_URL                  11055 non-null  int64 
- 14  URL_of_Anchor                11055 non-null  int64 
- 15  Links_in_tags                11055 non-null  int64 
- 16  SFH                          11055 non-null  int64 
- 17  Submitting_to_email          11055 non-null  int64 
- 18  Abnormal_URL                 11055 non-null  int64 
- 19  Redirect                     11055 non-null  int64 
- 20  on_mouseover                 11055 non-null  int64 
- 21  RightClick                   11055 non-null  int64 
- 22  popUpWidnow                  11055 non-null  int64 
- 23  Iframe                       11055 non-null  int64 
- 24  age_of_domain                11055 non-null  int64 
- 25  DNSRecord                    11055 non-null  int64 
- 26  web_traffic                  11055 non-null  int64 
- 27  Page_Rank                    11055 non-null  int64 
- 28  Google_Index                 11055 non-null  int64 
- 29  Links_pointing_to_page       11055 non-null  int64 
- 30  Statistical_report           11055 non-null  int64 
- 31  Result                       11055 non-null  int64 
+# Column Non-Null Count Dtype
+--- ------ -------------- -----
+0 index 11055 non-null object
+1 having_IPhaving_IP_Address 11055 non-null int64
+2 URLURL_Length 11055 non-null int64
+3 Shortining_Service 11055 non-null int64
+4 having_At_Symbol 11055 non-null int64
+5 double_slash_redirecting 11055 non-null int64
+6 Prefix_Suffix 11055 non-null int64
+7 having_Sub_Domain 11055 non-null int64
+8 SSLfinal_State 11055 non-null int64
+9 Domain_registeration_length 11055 non-null int64
+10 Favicon 11055 non-null int64
+11 port 11055 non-null int64
+12 HTTPS_token 11055 non-null int64
+13 Request_URL 11055 non-null int64
+14 URL_of_Anchor 11055 non-null int64
+15 Links_in_tags 11055 non-null int64
+16 SFH 11055 non-null int64
+17 Submitting_to_email 11055 non-null int64
+18 Abnormal_URL 11055 non-null int64
+19 Redirect 11055 non-null int64
+20 on_mouseover 11055 non-null int64
+21 RightClick 11055 non-null int64
+22 popUpWidnow 11055 non-null int64
+23 Iframe 11055 non-null int64
+24 age_of_domain 11055 non-null int64
+25 DNSRecord 11055 non-null int64
+26 web_traffic 11055 non-null int64
+27 Page_Rank 11055 non-null int64
+28 Google_Index 11055 non-null int64
+29 Links_pointing_to_page 11055 non-null int64
+30 Statistical_report 11055 non-null int64
+31 Result 11055 non-null int64
 dtypes: int64(31), object(1)
 memory usage: 2.7+ MB
 </pre>
