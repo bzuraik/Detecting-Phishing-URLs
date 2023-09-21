@@ -219,48 +219,7 @@ df_data.info()
 
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 11055 entries, 0 to 11054
-Data columns (total 32 columns):
-# Column Non-Null Count Dtype
---- ------ -------------- -----
-0 index 11055 non-null object
-1 having_IPhaving_IP_Address 11055 non-null int64
-2 URLURL_Length 11055 non-null int64
-3 Shortining_Service 11055 non-null int64
-4 having_At_Symbol 11055 non-null int64
-5 double_slash_redirecting 11055 non-null int64
-6 Prefix_Suffix 11055 non-null int64
-7 having_Sub_Domain 11055 non-null int64
-8 SSLfinal_State 11055 non-null int64
-9 Domain_registeration_length 11055 non-null int64
-10 Favicon 11055 non-null int64
-11 port 11055 non-null int64
-12 HTTPS_token 11055 non-null int64
-13 Request_URL 11055 non-null int64
-14 URL_of_Anchor 11055 non-null int64
-15 Links_in_tags 11055 non-null int64
-16 SFH 11055 non-null int64
-17 Submitting_to_email 11055 non-null int64
-18 Abnormal_URL 11055 non-null int64
-19 Redirect 11055 non-null int64
-20 on_mouseover 11055 non-null int64
-21 RightClick 11055 non-null int64
-22 popUpWidnow 11055 non-null int64
-23 Iframe 11055 non-null int64
-24 age_of_domain 11055 non-null int64
-25 DNSRecord 11055 non-null int64
-26 web_traffic 11055 non-null int64
-27 Page_Rank 11055 non-null int64
-28 Google_Index 11055 non-null int64
-29 Links_pointing_to_page 11055 non-null int64
-30 Statistical_report 11055 non-null int64
-31 Result 11055 non-null int64
-dtypes: int64(31), object(1)
-memory usage: 2.7+ MB
-</pre>
-</div>
+
 </div>
 
 </div>
@@ -270,37 +229,37 @@ memory usage: 2.7+ MB
 df_data.nunique()
 ```
 ```python
-having_IPhaving_IP_Address     2
-URLURL_Length                  3
-Shortining_Service             2
-having_At_Symbol               2
-double_slash_redirecting       2
-Prefix_Suffix                  2
-having_Sub_Domain              3
-SSLfinal_State                 3
-Domain_registeration_length    2
-Favicon                        2
-port                           2
-HTTPS_token                    2
-Request_URL                    2
-URL_of_Anchor                  3
-Links_in_tags                  3
-SFH                            3
-Submitting_to_email            2
-Abnormal_URL                   2
-Redirect                       2
-on_mouseover                   2
-RightClick                     2
-popUpWidnow                    2
-Iframe                         2
-age_of_domain                  2
-DNSRecord                      2
-web_traffic                    3
-Page_Rank                      2
-Google_Index                   2
-Links_pointing_to_page         3
-Statistical_report             2
-Result                         2
+having_IPhaving_IP_Address 2
+URLURL_Length 3
+Shortining_Service 2
+having_At_Symbol 2
+double_slash_redirecting 2
+Prefix_Suffix 2
+having_Sub_Domain 3
+SSLfinal_State 3
+Domain_registeration_length 2
+Favicon 2
+port 2
+HTTPS_token 2
+Request_URL 2
+URL_of_Anchor 3
+Links_in_tags 3
+SFH 3
+Submitting_to_email 2
+Abnormal_URL 2
+Redirect 2
+on_mouseover 2
+RightClick 2
+popUpWidnow 2
+Iframe 2
+age_of_domain 2
+DNSRecord 2
+web_traffic 3
+Page_Rank 2
+Google_Index 2
+Links_pointing_to_page 3
+Statistical_report 2
+Result 2
 dtype: int64
 ```
 
